@@ -13,8 +13,7 @@ require("lazy").setup({
         'nvim-telescope/telescope.nvim',
         tag = '0.1.1',
         dependencies = {'nvim-lua/plenary.nvim'}
-    }, {'cooperuser/glowbeam.nvim'}, {'joshdick/onedark.vim'},
-    { "ellisonleao/gruvbox.nvim", priority = 500 , config = true, opts = ...},
+    }, {'cooperuser/glowbeam.nvim'}, {'joshdick/onedark.vim'}, 
     {'nvim-treesitter/nvim-treesitter'}, {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'lewis6991/gitsigns.nvim'},
@@ -45,7 +44,12 @@ require("lazy").setup({
     }, {"folke/which-key.nvim"},
        { 'hrsh7th/vim-vsnip' },
     {'hrsh7th/vim-vsnip-integ'},
-{
+    { "shaunsingh/nord.nvim" },
+    {
+  'Exafunction/codeium.vim',
+  event = 'BufEnter'
+},{     
+
   "folke/flash.nvim",
   event = "VeryLazy",
   ---@type Flash.Config
